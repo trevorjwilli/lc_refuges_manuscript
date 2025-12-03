@@ -1,0 +1,317 @@
+# Note: Individual distributions can be extracted using the `stacks-dist-extract` utility.
+#       e.g. `stacks-dist-extract populations.log.distribs dist_name`
+
+BEGIN batch_progress
+# Batch 1: analyzed 20352 loci; filtered 461525 loci; 481877 loci seen.
+    Calculating F statistics...done.
+END batch_progress
+
+BEGIN samples_per_loc_prefilters
+# Distribution of valid samples matched to a catalog locus prior to filtering.
+n_samples	n_loci
+0	398021
+1	53191
+2	1871
+3	759
+4	455
+5	377
+6	290
+7	248
+8	294
+9	197
+10	228
+11	239
+12	278
+13	346
+14	453
+15	603
+16	344
+17	333
+18	240
+19	247
+20	260
+21	294
+22	371
+23	495
+24	761
+25	1312
+26	2239
+27	3905
+28	6206
+29	7020
+END samples_per_loc_prefilters
+
+BEGIN missing_samples_per_loc_prefilters
+# Distribution of missing samples for each catalog locus prior to filtering.
+Absent samples at locus	Count
+0	7020
+1	6206
+2	3905
+3	2239
+4	1312
+5	761
+6	495
+7	371
+8	294
+9	260
+10	247
+11	240
+12	333
+13	344
+14	603
+15	453
+16	346
+17	278
+18	239
+19	228
+20	197
+21	294
+22	248
+23	290
+24	377
+25	455
+26	759
+27	1871
+28	53191
+29	398021
+END missing_samples_per_loc_prefilters
+
+BEGIN snps_per_loc_prefilters
+# Distribution of the number of SNPs per catalog locus prior to filtering.
+n_snps	n_loci
+0	447738
+1	3018
+2	1657
+3	1053
+4	819
+5	798
+6	710
+7	738
+8	678
+9	833
+10	873
+11	925
+12	1085
+13	1158
+14	1293
+15	1315
+16	1340
+17	1398
+18	1372
+19	1292
+20	1352
+21	1246
+22	1129
+23	1050
+24	952
+25	839
+26	750
+27	640
+28	538
+29	486
+30	407
+31	333
+32	264
+33	231
+34	192
+35	184
+36	130
+37	134
+38	109
+39	84
+40	85
+41	66
+42	64
+43	47
+44	50
+45	38
+46	22
+47	34
+48	33
+49	20
+50	19
+51	20
+52	20
+53	13
+54	11
+55	16
+56	14
+57	8
+58	12
+59	8
+60	8
+61	8
+62	9
+63	5
+64	3
+65	3
+66	7
+67	6
+68	6
+69	5
+70	6
+71	3
+72	3
+73	1
+74	3
+75	2
+76	1
+78	4
+79	1
+80	2
+81	1
+82	2
+83	3
+84	3
+85	3
+86	1
+87	1
+88	3
+89	6
+90	2
+91	3
+92	2
+93	2
+95	2
+97	2
+100	1
+103	1
+106	2
+113	2
+114	1
+118	1
+124	2
+127	1
+167	1
+END snps_per_loc_prefilters
+
+BEGIN samples_per_loc_postfilters
+# Distribution of valid samples matched to a catalog locus after filtering.
+n_samples	n_loci
+24	222
+25	821
+26	2178
+27	3905
+28	6206
+29	7020
+END samples_per_loc_postfilters
+
+BEGIN missing_samples_per_loc_postfilters
+# Distribution of missing samples for each catalog locus after filtering.
+Absent samples at locus	Count
+0	7020
+1	6206
+2	3905
+3	2178
+4	821
+5	222
+END missing_samples_per_loc_postfilters
+
+BEGIN snps_per_loc_postfilters
+# Distribution of the number of SNPs per catalog locus (after filtering).
+n_snps	n_loci
+0	16970
+1	3382
+END snps_per_loc_postfilters
+
+BEGIN loci_per_sample_prefilters
+# Number of loci per individual sample (before filtering).
+sample	n_loci	present_loci	missing_loci	frequency_missing
+2022_Leland_Harris_LTC1	481877	24661	457216	0.9488
+2022_Leland_Harris_LTC10	481877	25808	456069	0.9464
+2022_Leland_Harris_LTC11	481877	24523	457354	0.9491
+2022_Leland_Harris_LTC12	481877	25820	456057	0.9464
+2022_Leland_Harris_LTC13	481877	24504	457373	0.9491
+2022_Leland_Harris_LTC14	481877	25735	456142	0.9466
+2022_Leland_Harris_LTC15	481877	25735	456142	0.9466
+2022_Leland_Harris_LTC2	481877	25900	455977	0.9463
+2022_Leland_Harris_LTC3	481877	25935	455942	0.9462
+2022_Leland_Harris_LTC4	481877	24710	457167	0.9487
+2022_Leland_Harris_LTC5	481877	27520	454357	0.9429
+2022_Leland_Harris_LTC6	481877	23432	458445	0.9514
+2022_Leland_Harris_LTC7	481877	27310	454567	0.9433
+2022_Leland_Harris_LTC8	481877	26654	455223	0.9447
+2022_Leland_Harris_LTC9	481877	26491	455386	0.9450
+2022_Lower_Rocky_LTC1	481877	25274	456603	0.9476
+2022_Lower_Rocky_LTC2	481877	25186	456691	0.9477
+2022_Lower_Rocky_LTC3	481877	24996	456881	0.9481
+2022_Lower_Rocky_LTC4	481877	24723	457154	0.9487
+2022_Lower_Rocky_LTC_10	481877	25850	456027	0.9464
+2022_Lower_Rocky_LTC_11	481877	25752	456125	0.9466
+2022_Lower_Rocky_LTC_12	481877	25566	456311	0.9469
+2022_Lower_Rocky_LTC_13	481877	25383	456494	0.9473
+2022_Lower_Rocky_LTC_14	481877	25232	456645	0.9476
+2022_Lower_Rocky_LTC_5	481877	25143	456734	0.9478
+2022_Lower_Rocky_LTC_6	481877	26754	455123	0.9445
+2022_Lower_Rocky_LTC_7	481877	25870	456007	0.9463
+2022_Lower_Rocky_LTC_8	481877	25658	456219	0.9468
+2022_Lower_Rocky_LTC_9	481877	25681	456196	0.9467
+END loci_per_sample_prefilters
+
+BEGIN loci_per_sample
+# Number of loci per individual sample (after filtering).
+sample	n_loci	present_loci	missing_loci	frequency_missing
+2022_Leland_Harris_LTC1	20352	18095	2257	0.1109
+2022_Leland_Harris_LTC10	20352	19721	631	0.0310
+2022_Leland_Harris_LTC11	20352	19756	596	0.0293
+2022_Leland_Harris_LTC12	20352	19698	654	0.0321
+2022_Leland_Harris_LTC13	20352	19807	545	0.0268
+2022_Leland_Harris_LTC14	20352	19798	554	0.0272
+2022_Leland_Harris_LTC15	20352	19858	494	0.0243
+2022_Leland_Harris_LTC2	20352	19461	891	0.0438
+2022_Leland_Harris_LTC3	20352	18999	1353	0.0665
+2022_Leland_Harris_LTC4	20352	18422	1930	0.0948
+2022_Leland_Harris_LTC5	20352	18975	1377	0.0677
+2022_Leland_Harris_LTC6	20352	18506	1846	0.0907
+2022_Leland_Harris_LTC7	20352	18168	2184	0.1073
+2022_Leland_Harris_LTC8	20352	18978	1374	0.0675
+2022_Leland_Harris_LTC9	20352	18975	1377	0.0677
+2022_Lower_Rocky_LTC1	20352	19839	513	0.0252
+2022_Lower_Rocky_LTC2	20352	19918	434	0.0213
+2022_Lower_Rocky_LTC3	20352	19755	597	0.0293
+2022_Lower_Rocky_LTC4	20352	19884	468	0.0230
+2022_Lower_Rocky_LTC_10	20352	19895	457	0.0225
+2022_Lower_Rocky_LTC_11	20352	19734	618	0.0304
+2022_Lower_Rocky_LTC_12	20352	19786	566	0.0278
+2022_Lower_Rocky_LTC_13	20352	19973	379	0.0186
+2022_Lower_Rocky_LTC_14	20352	20053	299	0.0147
+2022_Lower_Rocky_LTC_5	20352	19888	464	0.0228
+2022_Lower_Rocky_LTC_6	20352	19737	615	0.0302
+2022_Lower_Rocky_LTC_7	20352	19926	426	0.0209
+2022_Lower_Rocky_LTC_8	20352	19881	471	0.0231
+2022_Lower_Rocky_LTC_9	20352	19778	574	0.0282
+END loci_per_sample
+
+BEGIN variant_sites_per_sample
+# Number of variant sites per individual sample (after filtering).
+sample	n_sites	present_sites	missing_sites	frequency_missing
+2022_Leland_Harris_LTC1	3382	2944	438	0.1295
+2022_Leland_Harris_LTC10	3382	3178	204	0.0603
+2022_Leland_Harris_LTC11	3382	3122	260	0.0769
+2022_Leland_Harris_LTC12	3382	2962	420	0.1242
+2022_Leland_Harris_LTC13	3382	2877	505	0.1493
+2022_Leland_Harris_LTC14	3382	3060	322	0.0952
+2022_Leland_Harris_LTC15	3382	3075	307	0.0908
+2022_Leland_Harris_LTC2	3382	3137	245	0.0724
+2022_Leland_Harris_LTC3	3382	3057	325	0.0961
+2022_Leland_Harris_LTC4	3382	2964	418	0.1236
+2022_Leland_Harris_LTC5	3382	3051	331	0.0979
+2022_Leland_Harris_LTC6	3382	3041	341	0.1008
+2022_Leland_Harris_LTC7	3382	2999	383	0.1132
+2022_Leland_Harris_LTC8	3382	3098	284	0.0840
+2022_Leland_Harris_LTC9	3382	3117	265	0.0784
+2022_Lower_Rocky_LTC1	3382	3140	242	0.0716
+2022_Lower_Rocky_LTC2	3382	3107	275	0.0813
+2022_Lower_Rocky_LTC3	3382	2756	626	0.1851
+2022_Lower_Rocky_LTC4	3382	3090	292	0.0863
+2022_Lower_Rocky_LTC_10	3382	3246	136	0.0402
+2022_Lower_Rocky_LTC_11	3382	3251	131	0.0387
+2022_Lower_Rocky_LTC_12	3382	3252	130	0.0384
+2022_Lower_Rocky_LTC_13	3382	3251	131	0.0387
+2022_Lower_Rocky_LTC_14	3382	3063	319	0.0943
+2022_Lower_Rocky_LTC_5	3382	3245	137	0.0405
+2022_Lower_Rocky_LTC_6	3382	3257	125	0.0370
+2022_Lower_Rocky_LTC_7	3382	3251	131	0.0387
+2022_Lower_Rocky_LTC_8	3382	3232	150	0.0444
+2022_Lower_Rocky_LTC_9	3382	3128	254	0.0751
+END variant_sites_per_sample

@@ -1,0 +1,17 @@
+# Phi_st Means
+	Cluster	Copilot	Mills_Valley	Rosebud_Top_P
+Cluster		0.00610923	0.0273319	0.0072519
+Copilot			0.0172524	0.000280477
+Mills_Valley				0.0207191
+
+# Fst' Means
+	Cluster	Copilot	Mills_Valley	Rosebud_Top_P
+Cluster		0.00190011	0.0104654	0.00248972
+Copilot			0.00577383	-0.000101331
+Mills_Valley				0.00753689
+
+# Dxy Means
+	Cluster	Copilot	Mills_Valley	Rosebud_Top_P
+Cluster		0.000323801	0.000332852	0.000322502
+Copilot			0.000316625	0.000305859
+Mills_Valley				0.000315731

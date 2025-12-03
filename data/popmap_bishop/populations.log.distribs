@@ -1,0 +1,300 @@
+# Note: Individual distributions can be extracted using the `stacks-dist-extract` utility.
+#       e.g. `stacks-dist-extract populations.log.distribs dist_name`
+
+BEGIN batch_progress
+# Batch 1: analyzed 20917 loci; filtered 460960 loci; 481877 loci seen.
+    Calculating F statistics...done.
+END batch_progress
+
+BEGIN samples_per_loc_prefilters
+# Distribution of valid samples matched to a catalog locus prior to filtering.
+n_samples	n_loci
+0	414772
+1	36666
+2	1578
+3	801
+4	497
+5	412
+6	379
+7	346
+8	284
+9	286
+10	277
+11	283
+12	255
+13	264
+14	243
+15	271
+16	266
+17	284
+18	343
+19	412
+20	452
+21	613
+22	893
+23	1463
+24	2872
+25	6103
+26	10562
+END samples_per_loc_prefilters
+
+BEGIN missing_samples_per_loc_prefilters
+# Distribution of missing samples for each catalog locus prior to filtering.
+Absent samples at locus	Count
+0	10562
+1	6103
+2	2872
+3	1463
+4	893
+5	613
+6	452
+7	412
+8	343
+9	284
+10	266
+11	271
+12	243
+13	264
+14	255
+15	283
+16	277
+17	286
+18	284
+19	346
+20	379
+21	412
+22	497
+23	801
+24	1578
+25	36666
+26	414772
+END missing_samples_per_loc_prefilters
+
+BEGIN snps_per_loc_prefilters
+# Distribution of the number of SNPs per catalog locus prior to filtering.
+n_snps	n_loci
+0	447738
+1	3018
+2	1657
+3	1053
+4	819
+5	798
+6	710
+7	738
+8	678
+9	833
+10	873
+11	925
+12	1085
+13	1158
+14	1293
+15	1315
+16	1340
+17	1398
+18	1372
+19	1292
+20	1352
+21	1246
+22	1129
+23	1050
+24	952
+25	839
+26	750
+27	640
+28	538
+29	486
+30	407
+31	333
+32	264
+33	231
+34	192
+35	184
+36	130
+37	134
+38	109
+39	84
+40	85
+41	66
+42	64
+43	47
+44	50
+45	38
+46	22
+47	34
+48	33
+49	20
+50	19
+51	20
+52	20
+53	13
+54	11
+55	16
+56	14
+57	8
+58	12
+59	8
+60	8
+61	8
+62	9
+63	5
+64	3
+65	3
+66	7
+67	6
+68	6
+69	5
+70	6
+71	3
+72	3
+73	1
+74	3
+75	2
+76	1
+78	4
+79	1
+80	2
+81	1
+82	2
+83	3
+84	3
+85	3
+86	1
+87	1
+88	3
+89	6
+90	2
+91	3
+92	2
+93	2
+95	2
+97	2
+100	1
+103	1
+106	2
+113	2
+114	1
+118	1
+124	2
+127	1
+167	1
+END snps_per_loc_prefilters
+
+BEGIN samples_per_loc_postfilters
+# Distribution of valid samples matched to a catalog locus after filtering.
+n_samples	n_loci
+22	328
+23	1052
+24	2872
+25	6103
+26	10562
+END samples_per_loc_postfilters
+
+BEGIN missing_samples_per_loc_postfilters
+# Distribution of missing samples for each catalog locus after filtering.
+Absent samples at locus	Count
+0	10562
+1	6103
+2	2872
+3	1052
+4	328
+END missing_samples_per_loc_postfilters
+
+BEGIN snps_per_loc_postfilters
+# Distribution of the number of SNPs per catalog locus (after filtering).
+n_snps	n_loci
+0	18246
+1	2671
+END snps_per_loc_postfilters
+
+BEGIN loci_per_sample_prefilters
+# Number of loci per individual sample (before filtering).
+sample	n_loci	present_loci	missing_loci	frequency_missing
+2022_Bishop_LTC1	481877	24765	457112	0.9486
+2022_Bishop_LTC10	481877	25571	456306	0.9469
+2022_Bishop_LTC11	481877	26509	455368	0.9450
+2022_Bishop_LTC12	481877	25776	456101	0.9465
+2022_Bishop_LTC13	481877	26021	455856	0.9460
+2022_Bishop_LTC15	481877	27348	454529	0.9432
+2022_Bishop_LTC2	481877	26134	455743	0.9458
+2022_Bishop_LTC3	481877	26103	455774	0.9458
+2022_Bishop_LTC4	481877	26443	455434	0.9451
+2022_Bishop_LTC5	481877	25754	456123	0.9466
+2022_Bishop_LTC6	481877	24564	457313	0.9490
+2022_Bishop_LTC7	481877	27200	454677	0.9436
+2022_Bishop_LTC8	481877	25566	456311	0.9469
+2022_Bishop_LTC9	481877	26954	454923	0.9441
+2022_Red_Knolls_LTC1	481877	25525	456352	0.9470
+2022_Red_Knolls_LTC10	481877	24952	456925	0.9482
+2022_Red_Knolls_LTC12	481877	25061	456816	0.9480
+2022_Red_Knolls_LTC15	481877	25183	456694	0.9477
+2022_Red_Knolls_LTC2	481877	24811	457066	0.9485
+2022_Red_Knolls_LTC3	481877	25525	456352	0.9470
+2022_Red_Knolls_LTC4	481877	25299	456578	0.9475
+2022_Red_Knolls_LTC5	481877	25132	456745	0.9478
+2022_Red_Knolls_LTC6	481877	25653	456224	0.9468
+2022_Red_Knolls_LTC7	481877	25452	456425	0.9472
+2022_Red_Knolls_LTC8	481877	25737	456140	0.9466
+2022_Red_Knolls_LTC9	481877	27028	454849	0.9439
+END loci_per_sample_prefilters
+
+BEGIN loci_per_sample
+# Number of loci per individual sample (after filtering).
+sample	n_loci	present_loci	missing_loci	frequency_missing
+2022_Bishop_LTC1	20917	20313	604	0.0289
+2022_Bishop_LTC10	20917	20310	607	0.0290
+2022_Bishop_LTC11	20917	20347	570	0.0273
+2022_Bishop_LTC12	20917	20259	658	0.0315
+2022_Bishop_LTC13	20917	20382	535	0.0256
+2022_Bishop_LTC15	20917	20241	676	0.0323
+2022_Bishop_LTC2	20917	20309	608	0.0291
+2022_Bishop_LTC3	20917	20419	498	0.0238
+2022_Bishop_LTC4	20917	20372	545	0.0261
+2022_Bishop_LTC5	20917	20419	498	0.0238
+2022_Bishop_LTC6	20917	20148	769	0.0368
+2022_Bishop_LTC7	20917	20470	447	0.0214
+2022_Bishop_LTC8	20917	20422	495	0.0237
+2022_Bishop_LTC9	20917	20422	495	0.0237
+2022_Red_Knolls_LTC1	20917	19824	1093	0.0523
+2022_Red_Knolls_LTC10	20917	20360	557	0.0266
+2022_Red_Knolls_LTC12	20917	20188	729	0.0349
+2022_Red_Knolls_LTC15	20917	20193	724	0.0346
+2022_Red_Knolls_LTC2	20917	20171	746	0.0357
+2022_Red_Knolls_LTC3	20917	20381	536	0.0256
+2022_Red_Knolls_LTC4	20917	20273	644	0.0308
+2022_Red_Knolls_LTC5	20917	20369	548	0.0262
+2022_Red_Knolls_LTC6	20917	20394	523	0.0250
+2022_Red_Knolls_LTC7	20917	20406	511	0.0244
+2022_Red_Knolls_LTC8	20917	20304	613	0.0293
+2022_Red_Knolls_LTC9	20917	19831	1086	0.0519
+END loci_per_sample
+
+BEGIN variant_sites_per_sample
+# Number of variant sites per individual sample (after filtering).
+sample	n_sites	present_sites	missing_sites	frequency_missing
+2022_Bishop_LTC1	2671	2475	196	0.0734
+2022_Bishop_LTC10	2671	2418	253	0.0947
+2022_Bishop_LTC11	2671	2472	199	0.0745
+2022_Bishop_LTC12	2671	2430	241	0.0902
+2022_Bishop_LTC13	2671	2501	170	0.0636
+2022_Bishop_LTC15	2671	2458	213	0.0797
+2022_Bishop_LTC2	2671	2463	208	0.0779
+2022_Bishop_LTC3	2671	2496	175	0.0655
+2022_Bishop_LTC4	2671	2487	184	0.0689
+2022_Bishop_LTC5	2671	2493	178	0.0666
+2022_Bishop_LTC6	2671	2381	290	0.1086
+2022_Bishop_LTC7	2671	2531	140	0.0524
+2022_Bishop_LTC8	2671	2501	170	0.0636
+2022_Bishop_LTC9	2671	2489	182	0.0681
+2022_Red_Knolls_LTC1	2671	2478	193	0.0723
+2022_Red_Knolls_LTC10	2671	2536	135	0.0505
+2022_Red_Knolls_LTC12	2671	2349	322	0.1206
+2022_Red_Knolls_LTC15	2671	2366	305	0.1142
+2022_Red_Knolls_LTC2	2671	2370	301	0.1127
+2022_Red_Knolls_LTC3	2671	2453	218	0.0816
+2022_Red_Knolls_LTC4	2671	2419	252	0.0943
+2022_Red_Knolls_LTC5	2671	2502	169	0.0633
+2022_Red_Knolls_LTC6	2671	2510	161	0.0603
+2022_Red_Knolls_LTC7	2671	2484	187	0.0700
+2022_Red_Knolls_LTC8	2671	2531	140	0.0524
+2022_Red_Knolls_LTC9	2671	2503	168	0.0629
+END variant_sites_per_sample

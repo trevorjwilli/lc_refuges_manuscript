@@ -1,0 +1,12 @@
+denovo.M1 17594
+denovo.M10 17184
+denovo.M11 17141
+denovo.M12 17062
+denovo.M2 18172
+denovo.M3 18095
+denovo.M4 17849
+denovo.M5 17693
+denovo.M6 17576
+denovo.M7 17509
+denovo.M8 17369
+denovo.M9 17255
