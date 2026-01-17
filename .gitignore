@@ -214,4 +214,5 @@ stacks_pipeline/denovo.all.pops
 # DS store
 .DS_Store
 
-
+# R history
+.Rhistory

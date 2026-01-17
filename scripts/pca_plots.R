@@ -27,7 +27,7 @@ plot_pca <- function(path, outpath=NA, returns='plot') {
   percent_pc1 <- eigen$percent[1]
   percent_pc2 <- eigen$percent[2]
   
-  # Make list of source poopulation names
+  # Make list of source population names
   source_pops <- c('Bishop', 'Clear Lake', 'Gandy', 'Leland Harris',
                    'Mills Valley', 'Mona')
   
@@ -76,17 +76,41 @@ plot_pca <- function(path, outpath=NA, returns='plot') {
   if(returns == 'plot') {
     return(p)
   } else {
+    print(round(percent_pc1*100, digits=1))
+    print(round(percent_pc2*100, digits=1))
     return(evec)
   }
 }
 
-b_plot <- plot_pca('data/bishop/', outpath = 'data/bishop/pca_plot')
-cl_plot <- plot_pca('data/clear_lake/', outpath = 'data/clear_lake/pca_plot')
-g_plot <- plot_pca('data/gandy/', outpath = 'data/gandy/pca_plot')
-lh_plot <- plot_pca('data/leland_harris/', outpath = 'data/leland_harris/pca_plot')
-mv_plot <- plot_pca('data/mills_valley/', outpath = 'data/mills_valley/pca_plot')
-mo_plot <- plot_pca('data/mona/', outpath = 'data/mona/pca_plot')
+b_plot <- plot_pca('data/popmap_bishop/', outpath = 'data/popmap_bishop/pca_plot')
+b_plot_old <- plot_pca('data/bishop/')
+cl_plot <- plot_pca('data/popmap_clear_lake/', outpath = 'data/popmap_clear_lake/pca_plot')
+cl_plot_old <- plot_pca('data/clear_lake/')
+g_plot <- plot_pca('data/popmap_gandy/', outpath = 'data/popmap_gandy/pca_plot')
+g_plot_old <- plot_pca('data/gandy/')
+lh_plot <- plot_pca('data/popmap_leland_harris/', outpath = 'data/popmap_leland_harris/pca_plot')
+lh_plot_old <- plot_pca('data/leland_harris/')
+mv_plot <- plot_pca('data/popmap_mills_valley/', outpath = 'data/popmap_mills_valley/pca_plot')
+mv_plot_old <- plot_pca('data/mills_valley/')
+mo_plot <- plot_pca('data/popmap_mona/', outpath = 'data/popmap_mona/pca_plot')
+mo_plot_old <- plot_pca('data/mona')
 
+all_plot <- plot_pca('data/popmap_final/', outpath = 'data/popmap_final/pca_plot', returns = 'data.frame')
+
+ggplot(all_plot, aes(PC1, PC2, shape = refuge, color = pop)) +
+  geom_point(size = 2) +
+  scale_color_d3(palette = 'category20') +
+  coord_fixed(5.9/7.8) +
+  xlab(paste0('PC1 (', 7.8, '%)')) +
+  ylab(paste0('PC2 (', 5.9, '%)')) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        axis.text = element_text(size = 7),
+        axis.title = element_text(size = 7),
+        legend.text = element_text(size = 5))
+
+ggsave('figures/combined_pca.png', width=168, height=168,
+       units='mm', dpi=300)
 ggarrange(b_plot, lh_plot, g_plot, mv_plot, cl_plot, mo_plot, 
           ncol=2, nrow=3, labels=LETTERS,
           font.label=list(size=8, color='black', face='bold'))
